@@ -17,7 +17,93 @@
       <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1>Registro</h1>
+
+      <form action="formulario" method="post">
+
+        <!-- Nombre y Apellido -->
+      <div style="display: flex;">
+        <div style="display: grid;">
+          <label for="name">Nombre: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div style="display: grid; margin-left: 15px;">
+          <label for="surname">Apellido: </label>
+          <input type="text" name="surname" id="surname" required>
+        </div>
+      </div> <br><br>
+
+      <!-- Fecha de Nacimiento -->
+      <div>
+        <label for="birthday">Fecha de Nacimiento: </label>
+        <input type="date" name="birthday" id="birthday" required>
+      </div><br><br>
+
+      <!-- Edad -->
+      <div>
+        <label for="age">Edad: </label>
+        <input type="number" name="age" id="age" value="18">
+      </div> <br><br>
+
+      <!-- Genero -->
+      <div>
+        <label for="gender">Genero: </label>
+        <select name="gender" id="gender" required>
+          <option value="M">Masculino</option>
+          <option value="F">Femenino</option>
+          <option value="O">Otro</option>
+        </select>
+      </div> <br><br>
+
+      <!-- Materia Favorita -->
+      <div>
+        <label for="materia">Materia Favorita: </label>
+        <select name="materia" id="materia" required>
+          <option value="COM">Comunicaciones</option>
+          <option value="BDD">Base de Datos</option>
+          <option value="DSI">Diseño de Sistemas</option>
+          <option value="DDS">Desarrollo de Software</option>
+        </select>
+      </div> <br><br>
+
+      <!-- Habilidades -->
+      <div>
+        <label>Habilidades</label><br>
+
+        <input type="checkbox" name="abilities" id="H1" value="1">
+        <label for="H1">1</label> <br>
+        <input type="checkbox" name="abilities" id="H2" value="2">
+        <label for="H2">2</label> <br>
+        <input type="checkbox" name="abilities" id="H3" value="3">
+        <label for="H3">3</label>
+      </div> <br><br>
+
+      <!-- Interes -->
+      <div>
+        <label>Nivel de interes en la materia</label><br>
+
+        <input type="radio" name="interes" id="I5" value="MuyInteresado">
+        <label for="I5">Muy Interesado</label> <br>
+        <input type="radio" name="interes" id="I4" value="Interesado">
+        <label for="I4">Interesado</label> <br>
+        <input type="radio" name="interes" id="I3" value="Intermedio">
+        <label for="I3">Intermedio</label> <br>
+        <input type="radio" name="interes" id="I2" value="PocoInteresado">
+        <label for="I2">Poco Interesado</label><br>
+        <input type="radio" name="interes" id="I1" value="SinInteres">
+        <label for="I1">Sin Interes</label><br>
+      </div> <br><br>
+
+      <!-- Comentario -->
+      <div style="display: grid;">
+        <label for="commit">Comentario: </label>
+        <textarea name="commit" id="commit" cols="30" rows="5"></textarea>
+      </div> <br>
+
+      <!-- Submit -->
+      <input type="submit" value="Enviar">
+
+      </form>
     </main>
   </body>
 </html>
